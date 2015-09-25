@@ -1,0 +1,19 @@
+parameters:
+     digitas_action_bundle.action.copy.class: Digitas\Bundle\ActionBundle\Action\ActionCopy
+     digitas_action_bundle.action.writefile.class: Digitas\Bundle\ActionBundle\Action\ActionWriteFile
+     digitas_action_bundle.action.writejsonfile.class: Digitas\Bundle\ActionBundle\Action\ActionWriteJsonFile
+     digitas_action_bundle.actionfactory.class: Digitas\Bundle\ActionBundle\Action\ActionFactory
+
+services:
+    digitas_action_bundle.action.copy:
+        class: %digitas_action_bundle.action.copy.class%
+        scope: prototype
+    digitas_action_bundle.action.writefile:
+        class: %digitas_action_bundle.action.writefile.class%
+        scope: prototype
+    digitas_action_bundle.action.writejsonfile:
+        class: %digitas_action_bundle.action.writejsonfile.class%
+        scope: prototype
+    digitas_action_bundle.actionfactory:
+        class: %digitas_action_bundle.actionfactory.class%
+        arguments: [@service_container]

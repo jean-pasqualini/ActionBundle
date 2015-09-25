@@ -1,0 +1,16 @@
+{
+    "name": "digitas/action-bundle",
+    "description": "Action aexposé via une interface fluide",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jean Pasqualini",
+            "email": "jean.pasqualini.abbeal@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
